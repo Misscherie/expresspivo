@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="anketa" class="popup-window popup-window--hidden">
+        <h2 class="popup-window__heading">
+            АНКЕТА ОПТОВИКА
+        </h2>
+        <button id="krestik" type="button" class="popup-window__close-btn">
+
+        </button>
+        <form id="form" method="post" class="popup-window__form">
+            <fieldset class="popup-window__form-fieldset">
+                <input name="name" type="text" placeholder="Имя" class="popup-window__form-input">
+
+            </fieldset>
+            <fieldset class="popup-window__form-fieldset">
+                <input inputmode="tel" name="phone" type="tel" placeholder="Телефон" class="popup-window__form-input">
+
+            </fieldset>
+            <fieldset class="popup-window__form-fieldset">
+                <input name="email" type="mail" placeholder="Почта" class="popup-window__form-input">
+
+            </fieldset>
+            <fieldset class="popup-window__form-fieldset">
+                <input name="place" type="text" placeholder="Район доставки" class="popup-window__form-input">
+
+            </fieldset>
+            <fieldset class="popup-window__form-fieldset">
+                <input name="inquiry" type="text" placeholder="Запрос" class="popup-window__form-input">
+
+            </fieldset>
+            <p class="popup-window__form-copyrights">
+                * Нажимая на кнопку “Отправить”, вы соглашаетесь с обработкой <a href=""
+                    class="popup-window__form-link">персональных данных.</a> </p>
+
+            <button class="popup-window__form-btn">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+
+
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="" class="header__logo">экспресс ПИВО</a>
+            <nav class="nav">
+                <a href="#" class="nav__link">Главная</a>
+                <a href="#catalog" class="nav__link">Каталог</a>
+                <a href="#reviews" class="nav__link">Отзывы</a>
+                <a href="#prices" class="nav__link">О нас/ сотрудничество</a>
+            </nav>
+            <div class="header__socials socials">
+                <a target="_blank" href="https://vk.com/public220931998" class="socials-link">
+
+                </a>
+                <a target="_blank" href="https://telegram.me/pivoOptom_bot" class="socials-link">
+
+                </a>
+                <a href="./comingsoon.html" class="socials-link">
+
+                </a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-menu">
+                    <div id="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+                    <nav id="hidden-menu">
+                        <a href="" class="nav__link">Главная</a>
+                        <a href="#catalog" class="nav__link">Каталог</a>
+                        <a href="#reviews" class="nav__link">Отзывы</a>
+                        <a href="#prices" class="nav__link">О нас/сотрудничество</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="promo_wrapper wrapper">
+
+            <div class="promo__img">
+                <img src="./assets/img/pattern.png" alt="">
+            </div>
+            <h1 class="promo__heading">
+                экспресс ПИВО
+            </h1>
+            <h3 class="promo__subheading">
+                Гибкая ценовая политика
+                и индивидуальный подход к каждому клиенту.
+            </h3>
+            <div class="promo__buttons buttons">
+                <a href="#" id="knopka" class="promo__button button">
+                    Заполнить анкету
+                </a>
+                <a target="_blank" href="https://telegram.me/pivoOptom_bot" class="promo__button button">
+                    TELEGRAM
+                </a>
+            </div>
+
+        </div>
+        <div class="promo-video">
+            <video class="promo-video__video" autoplay="autoplay" muted="muted"
+                src="./assets/videos/videobeer.mp4"></video>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <div class="wrapper catalog__wrapper">
+            <h2 class="heading">
+                КАТАЛОГ
+            </h2>
+            <div class="catalog-tab-list">
+                <button onclick="document.location='catalogbaltika.html'" class="catalog-tab-list__item">
+                    <picture>
+                        <img src="./assets/icons/baltika.svg" alt="" class="catalog-tab-list__img">
+                    </picture>
+                    <span>Baltika</span>
+                    <span> Перейти в каталог</span>
+                </button>
+                <button onclick="document.location='efes.html'"
+                    class="catalog-tab-list__item catalog-tab-list__item--active">
+                    <picture>
+                        <img src="./assets/img/efes.jpeg" alt="" class="catalog-tab-list__img">
+                    </picture>
+                    <span>EFES</span>
+                    <span> Перейти в каталог</span>
+                </button>
+                <button onclick="document.location='cola.html'" class="catalog-tab-list__item">
+                    <picture>
+                        <img src="./assets/img/cola.jpg" alt="" class="catalog-tab-list__img">
+                    </picture>
+                    <span>Coca-Cola</span>
+                    <span> Перейти в каталог</span>
+                </button>
+            </div>
+ </div>
+    </section>
+    <section class="invite">
+        <div class="invite__wrapper wrapper">
+            <h3 class="invite__heading heading">
+                Приглашаем к сотрудничеству оптовиков и ритейлеров.
+            </h3>
+            <p class="invite__text text">
+                Мы имеем очень большой склад в Московской области, где всегда есть в наличии пиво <span>самых известных
+                    производителей.</span> Мы не продаём и не осуществляем отгрузки частным лицам. Наш клиент - это
+                крупные магазины и оптовые региональные базы продуктов питания.
+
+                <span>Минимальный объём партии отгрузки 25 паллет</span> в ассортименте. Если вы желаете приобрести пиво
+                крупным оптом по самым низким ценам от 1 миллиона рублей, то всегда обращайтесь, будем рады любому
+                клиенту.
+
+            </p>
+            <a href="#" id="knopka2" class="button">Заполнить анкету</a>
+
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <div class="reviews__wrapper wrapper">
+            <h3 class="reviews__heading heading">
+                ОТЗЫВЫ
+            </h3>
+            <div class="swiper swiper-second">
+                <div class="swiper-wrapper second-swiper-wrapper">
+                    <div class="swiper-slide second-swiper-slide">
+                        <p class="swiper-text">
+                            Данная компания делает все возможное, чтобы наши поставки работали исправно. Хотим выразить
+                            благодарность компании за ее внимательность и профессионализм.
+                        </p>
+                        <p class="signature">Мария</p>
+                    </div>
+                    <div class="swiper-slide second-swiper-slide">
+                        <p class="swiper-text">
+                            Все быстро, четко, по существу и , конечно же, очень приятно было с Вами работать! Спасибо
+                            за такую комфортную обстановку при сделке! Обязательно буду оформлять с Вами следующие
+                            поставки.
+                        </p>
+                        <p class="signature">Виталий</p>
+                    </div>
+                    <div class="swiper-slide second-swiper-slide">
+                        <p class="swiper-text">
+                            Давно искали компанию, с которой можно было бы работать на постоянной основе без наличия
+                            сопутствующего стресса и постоянных изменений. Это именно та компания! Спасибо вам!!
+                        </p>
+                        <p class="signature">Павел</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="prices">
+        <div class="prices__wrapper wrapper">
+            <h3 class="prices__heading heading">
+                ГИБКАЯ ЦЕНОВАЯ ПОЛИТИКА
+            </h3>
+            <p class="prices__text text">
+                Если вы крупный покупатель с суммой покупки <span>от 5 миллионов рублей</span> – сообщите
+                о своём намерении покупать пиво оптом, заполнив <span>анкету оптовика,</span> где вы можете указать
+                устраивающую вас цену, тем самым приглашая нас к диалогу по установлению персональной цены.
+            <p class="text-next">Гибкая ценовая политика и индивидуальный подход к каждому клиенту.</p>
+            </p>
+            <div class="prices__buttons buttons">
+                <a href="#" id="knopka3" class="price__button button">Заполнить анкету</a>
+                <a target="_blank" href="https://telegram.me/pivoOptom_bot" class="price__button button">TELEGRAM</a>
+            </div>
+        </div>
+    </section>
+    <section class="promotion">
+        <div class="promotion__wrapper wrapper">
+            <h3 class="promotion__heading heading">При покупке от 1, 5 миллионов рублей скидка 5%</h3>
+            <div id="demo">
+                <div>
+                    <p id="days"></p>
+                    <p class="count">Дней</p>
+                </div>
+                <div>
+                    <p id="hours"></p>
+                    <p class="count">Часов</p>
+                </div>
+                <div>
+                    <p id="minutes"></p>
+                    <p class="count">Минут</p>
+                </div>
+                <div>
+                    <p id="seconds"></p>
+                    <p class="count">Секунд</p>
+                </div>
+            </div>
+            <h3 class="promotion__subheading">до конца акции</h3>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <a href="" class="header__logo logo">экспресс ПИВО</a>
+            <div class="footer__contacts">
+                <p class="address">г. Тольятти, ул. 40 лет Победы д. 51 кв/оф 24</p>
+                <p class="phone-number">+7-(965)-538-53-02</p>
+            </div>
+
+            <div class="footer__socials socials">
+                <a target="_blank" href="https://vk.com/expresspivo" class="socials-link">
+
+                </a>
+                <a target="_blank" href="https://telegram.me/pivoOptom_bot" class="socials-link">
+
+                </a>
+                <a href="#" class="socials-link">
+
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/timer.js"></script>
+    <script>
+        let burgerBtn = document.getElementById('burger-btn');
+        let hiddenMenu = document.getElementById('hidden-menu');
+
+        let ShowMenu = () => {
+            hiddenMenu.classList.toggle('active');
+        }
+        burgerBtn.addEventListener('click', ShowMenu);
+    </script>
+    <script async src="./scripts/popup.js"></script>
+    <script src="./scripts/table.js"></script>
+    <div class="container-message">
+        <div class="container-message__inner">
+            Отправлено
+            <button id="closebtn">&#10005;</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form").submit(function (e) {
+                e.preventDefault()//устанавливаем событие отправки для формы с id=form
+                var form_data = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: 'send.php', //путь до php фаила отправителя
+                    data: form_data,
+                    success: function (data) {
+                        $('.container-message').addClass('active');
+
+                    }
+                });
+            });
+        });
+        $("#closebtn").on("click", e => $('.container-message').removeClass('active'));
+
+    </script>
+</body>
+
+</html>
